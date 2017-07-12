@@ -14,7 +14,7 @@ dependencies {
 }
 
 cucumber {
-    formats = ['pretty','json:build/cucumber.json','junit:build/cucumber.xml']
+    formats = ['pretty','json:build/cucumber.json','junit:build/cucumber.xml','html:build/cucumber.html']
     glueDirs = ['src/cucumber/java/com/cucumber/steps']
     featureDirs = ['src/cucumber/resources/features']
     tags = []

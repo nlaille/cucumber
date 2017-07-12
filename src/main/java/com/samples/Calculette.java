@@ -1,21 +1,23 @@
 package com.samples;
 
-public class Calculette {
-    private Double value;
+import java.math.BigDecimal;
 
-    public Calculette(Double def) {
+public class Calculette {
+    private BigDecimal value;
+
+    public Calculette(BigDecimal def) {
         value = def;
     }
 
-    public void add(Double toAdd) {
-        this.value += toAdd;
+    public void add(BigDecimal toAdd) {
+        this.value = this.value.add(toAdd);
     }
 
-    public void sub(Double value) {
-        this.value -= value;
+    public void sub(BigDecimal value) {
+        this.value = this.value.subtract(value);
     }
 
-    public Double getValue() {
+    public BigDecimal getValue() {
         return this.value;
     }
 }
